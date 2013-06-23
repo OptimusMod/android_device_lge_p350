@@ -1,15 +1,15 @@
 # Inherit from those products. Most specific first
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
-$(call inherit-product-if-exists, vendor/lge/p350/p350-vendor.mk)
+$(call inherit-product-if-exists, vendor/motorola/xt300/xt300-vendor.mk)
 
 # The gps config appropriate for this device
 $(call inherit-product, device/common/gps/gps_us_supl.mk)
 
-DEVICE_PACKAGE_OVERLAYS += device/lge/p350/overlay
+DEVICE_PACKAGE_OVERLAYS += device/motorola/xt300/overlay
 
 ifeq ($(TARGET_PREBUILT_KERNEL),)
-	LOCAL_KERNEL := device/lge/p350/kernel
+	LOCAL_KERNEL := device/motorola/xt300/kernel
 else
 	LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
 endif
@@ -101,6 +101,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_LOCALES += ldpi mdpi
 
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
-PRODUCT_NAME := p350
-PRODUCT_DEVICE := p350
-PRODUCT_MODEL := LG Optimus Me
+PRODUCT_NAME := xt300
+PRODUCT_DEVICE := xt300
+PRODUCT_MODEL := Motorola SPICE

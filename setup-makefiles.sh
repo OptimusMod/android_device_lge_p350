@@ -14,8 +14,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-VENDOR=lge
-DEVICE=p350
+VENDOR=motorola
+DEVICE=xt300
 
 mkdir -p ../../../vendor/$VENDOR/$DEVICE
 

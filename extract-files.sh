@@ -6,7 +6,7 @@
 # you may not use this file except in compliance with the License.
 # You may obtain a copy of the License at
 #
-#      http://www.apache.org/licenses/LICENSE-2.0
+# http://www.apache.org/licenses/LICENSE-2.0
 #
 # Unless required by applicable law or agreed to in writing, software
 # distributed under the License is distributed on an "AS IS" BASIS,
@@ -14,8 +14,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-VENDOR=lge
-DEVICE=p350
+VENDOR=motorola
+DEVICE=xt300
 
 rm -rf ../../../vendor/$VENDOR/$DEVICE
 mkdir -p ../../../vendor/$VENDOR/$DEVICE/proprietary/lib/egl
@@ -98,7 +98,7 @@ adb pull /system/lib/libqmi.so ../../../vendor/$VENDOR/$DEVICE/proprietary/lib/l
 adb pull /system/lib/libdll.so ../../../vendor/$VENDOR/$DEVICE/proprietary/lib/libdll.so
 adb pull /system/lib/liblgeat.so ../../../vendor/$VENDOR/$DEVICE/proprietary/lib/liblgeat.so
 adb pull /system/lib/liblgdrm.so ../../../vendor/$VENDOR/$DEVICE/proprietary/lib/liblgdrm.so
-adb pull /system/lib/liblgdrmwbxml.so ../../../vendor/$VENDOR/$DEVICE/proprietary/lib/liblgdrmwbxml.so 
+adb pull /system/lib/liblgdrmwbxml.so ../../../vendor/$VENDOR/$DEVICE/proprietary/lib/liblgdrmwbxml.so
 adb pull /system/lib/liblgerft.so ../../../vendor/$VENDOR/$DEVICE/proprietary/lib/liblgerft.so
 adb pull /system/lib/libbcmwl.so ../../../vendor/$VENDOR/$DEVICE/proprietary/lib/libbcmwl.so
 adb pull /system/lib/libdss.so ../../../vendor/$VENDOR/$DEVICE/proprietary/lib/libdss.so
